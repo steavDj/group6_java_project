@@ -4,7 +4,7 @@ public class OddAndEvenNumberDS {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello Team");
+        System.out.println("Hello Best Team Ever!!");
 
     }
 
