@@ -9,8 +9,8 @@ public class OddAndEvenNumbersLS {
 
     public static void OddOrEven (int num){
         if (num % 2 == 1){
-            System.out.println("Number is odd");;
-        }else System.out.println("Number is even");;
+            System.out.println("Number is odd");
+        }else System.out.println("Number is even");
     }
 }
 /*
