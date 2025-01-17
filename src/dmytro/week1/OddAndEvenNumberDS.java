@@ -10,6 +10,8 @@ public class OddAndEvenNumberDS {
 
         identify(22);
 
+        identify(56);
+
     }
 
     public static void identify(int num) {
