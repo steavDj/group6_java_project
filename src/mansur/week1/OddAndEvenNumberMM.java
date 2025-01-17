@@ -16,7 +16,7 @@ public class OddAndEvenNumberMM {
 
     public static String identify(int num){
         if (num % 2 != 0){
-            return "odd";
+            return "odd1";
         }
         return "even";
     }

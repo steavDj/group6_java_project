@@ -15,7 +15,7 @@ public class OaddAndEvenNumberIS {
 
     public static void identify(int number){
         if (number % 2 == 0){
-            System.out.println("Even");
+            System.out.println("Even1");
         }else {
             System.out.println("Odd");
         }

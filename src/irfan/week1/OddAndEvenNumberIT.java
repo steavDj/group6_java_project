@@ -3,7 +3,7 @@ package irfan.week1;
 public class OddAndEvenNumberIT {
     public static void main(String[] args) {
 
-        System.out.println("Hello Team Let's Do it!");
+        System.out.println("Hello Team Let's Do it!1");
         System.out.println(verifyOddOrEven(10));
         System.out.println(verifyOddOrEven(5));
 

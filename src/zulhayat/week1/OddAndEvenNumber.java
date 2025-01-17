@@ -5,7 +5,7 @@ public class OddAndEvenNumber {
 
         public static String identify(int number) {
             if (number % 2 == 0) {
-                return "Even";
+                return "Even1";
             } else {
                 return "odd";
             }
