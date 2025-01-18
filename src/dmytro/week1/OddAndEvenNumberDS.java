@@ -10,11 +10,13 @@ public class OddAndEvenNumberDS {
 
         identify(22);
 
+        identify(56);
+
     }
 
     public static void identify(int num) {
 
-        // Checking if number has a remainder after dividing and print out result
+        // Checking if number has a remainder after dividing and print out result.
         if (num % 2 == 0)
             System.out.println("Even");
         else
