@@ -1,4 +1,4 @@
-package week2;
+package hanna7.week2;
 
 public class FINRA {
 

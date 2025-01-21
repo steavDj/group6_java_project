@@ -1,4 +1,4 @@
-package week1;
+package hanna7.week1;
 
 public class OddAndEvenNumberHL {
 
