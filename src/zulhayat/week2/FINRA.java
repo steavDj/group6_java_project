@@ -9,7 +9,6 @@ package zulhayat.week2;
          */
 
 public class FINRA {
-
     public static void main(String[] args) {
         printFINRA();
     }
@@ -26,5 +25,4 @@ public class FINRA {
             }
         }
     }
-
 }
