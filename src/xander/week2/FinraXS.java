@@ -27,26 +27,26 @@ public class FinraXS {
         finraSorter(75, 100);
     }
 
-    // Method that take the start and end input for printing FINRA
+    // Method that take the start and end input for printing FINRA and sorts the numbers accordingly to the task
     public static void finraSorter(int start, int end) {
 
-        for (int i = start; i < end; i++) {
+        for (int i = start; i <= end; i++) {
 
-            if (i % 3 == 0 && i % 5 == 0) {
+            if (i % 15 == 0) {
                 System.out.println("FINRA");
-            }
-            if (i % 3 == 0) {
+            } else if (i % 3 == 0) {
                 System.out.println("FIN");
-            }
-            if (i % 5 == 0) {
+            } else if (i % 5 == 0) {
                 System.out.println("RA");
-            }
+            } else {
+                System.out.println(i);
 
-            System.out.println(i);
+            }
 
         }
 
     }
+
 
 
 }
