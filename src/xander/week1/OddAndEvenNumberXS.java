@@ -28,7 +28,7 @@ public class OddAndEvenNumberXS {
 
     }
 
-    // method that takes integer, returns "Even" or "Odd"
+    // Method that takes integer, returns "Even" or "Odd"
     public static String identify(int num) {
 
         if (num % 2 == 0) {
