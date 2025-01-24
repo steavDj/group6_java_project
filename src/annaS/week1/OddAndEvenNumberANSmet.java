@@ -1,6 +1,6 @@
-package anna.week1;
+package annaS.week1;
 
-public class OddAndEvenNumberAN {
+public class OddAndEvenNumberANSmet {
     public static void main(String[] args) {
 
        identifyOddOrEven(-23);
@@ -19,3 +19,6 @@ public class OddAndEvenNumberAN {
     }
 
 }
+//Task Requirements
+// Numbers -- Odd & Even
+//    Write a method that identifies whether a given number is even or odd
