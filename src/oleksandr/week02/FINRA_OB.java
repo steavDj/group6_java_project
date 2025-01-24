@@ -1,6 +1,6 @@
 package oleksandr.week02;
 
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 
 public class FINRA_OB {
@@ -22,5 +22,6 @@ public class FINRA_OB {
                 System.out.print(i + " ");
             }
         }
+        scanner.close();
     }
 }
