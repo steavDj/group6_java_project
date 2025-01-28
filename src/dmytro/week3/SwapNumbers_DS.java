@@ -46,7 +46,7 @@ public class SwapNumbers_DS {
         // Re-assign "a" value. Subtract "b" from "a" variable
         a = a - b;
 
-        // Print out values of numbers of two numbers after swapping
+        // Print out values of two numbers after swapping
         System.out.println("After swapping:");
         System.out.println("\t\t\t\t First number : " + a);
         System.out.println("\t\t\t\t Second number: " + b);
