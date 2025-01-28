@@ -1,6 +1,6 @@
 package lindey.week3;
 
-public class SwapNumbers {
+public class SwapNumbers_LS {
     public static void main(String[] args) {
         //Swap two variables’ values without a third variable
         int x = -15;
