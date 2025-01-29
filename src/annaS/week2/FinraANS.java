@@ -1,16 +1,16 @@
 package annaS.week2;
 
-public class FinraSmet {
+public class FinraANS {
     public static void main(String[] args) {
 
-        int num = 30;
-
-        finraMethod(33);
-
+       finraMethod(40);
+        System.out.println();
+        finraMethodBoolean(50);
 
     }
 
     private static void finraMethod(int num) {
+
         for (int i = 1; i <= num; i++) {
 
             if (i % 3 == 0 && i % 5 == 0)
@@ -23,8 +23,31 @@ public class FinraSmet {
                 System.out.print(i + " ");
 
         }
-
     }
+
+    private static void finraMethodBoolean(int num) {
+        for (int i = 1; i <= num; i++) {
+
+            boolean divBy3 = i%3==0;
+            boolean divBy5 = i%5==0;
+
+            String result ="";
+
+            if (divBy3 && divBy5) {
+                result = "FINRA";
+            }else if (divBy3) {
+                result = "FIN";
+            }else if (divBy5) {
+                result = "RA";
+            }else {
+                result = i + "";
+            }
+
+           System.out.print(result + " ");
+        }
+    }
+
+
 }
 /*
 Java Coding Tasks - Week2- Task Requirements

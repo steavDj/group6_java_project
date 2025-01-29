@@ -1,6 +1,6 @@
 package annaS.week1;
 
-public class OddAndEvenNumberANSmet {
+public class OddAndEvenNumberANS {
     public static void main(String[] args) {
 
        identifyOddOrEven(-23);
