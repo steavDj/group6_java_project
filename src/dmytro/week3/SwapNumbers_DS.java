@@ -1,5 +1,8 @@
 package dmytro.week3;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class SwapNumbers_DS {
 
     public static void main(String[] args) {
@@ -20,7 +23,8 @@ public class SwapNumbers_DS {
         System.out.println("\nfirst = " + first);
         System.out.println("second = " + second);
 
-        System.out.println("\n===== Solving the task via the method =====\n");
+        System.out.println("\n===== Solving the task via the method =====");
+        System.out.println("*** Doesn't modify exist variables! ***\n");
 
         swap(first, second);
         swap(30,60);
@@ -28,8 +32,15 @@ public class SwapNumbers_DS {
         swap(-13, 12);
         swap(-2, -32);
 
+        System.out.println("\n===== Solving the task via the method =====\n");
+
+        int[] num = {32, 41};
+        swap(num);
+        System.out.println(num[0] + " " + num[1]);
+
     }
 
+    // This method couldn't modify exist int variable
     public static void swap(int a, int b) {
 
         // Print out original values of two numbers before swapping
@@ -53,4 +64,19 @@ public class SwapNumbers_DS {
 
     }
 
+    // This method can modify exist int array
+    public static void swap(int[] num) {
+
+        System.out.println("Original value:");
+        System.out.println("\t\t\t\t First number : " + num[0]);
+        System.out.println("\t\t\t\t Second number: " + num[1]);
+
+        num[0] = num[0] + num[1];
+        num[1] = num[0] - num[1];
+        num[0] = num[0] - num[1];
+
+        System.out.println("After swapping:");
+        System.out.println("\t\t\t\t First number : " + num[0]);
+        System.out.println("\t\t\t\t Second number: " + num[1]);
+    }
 }
