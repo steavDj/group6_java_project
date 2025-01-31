@@ -5,7 +5,7 @@ public class SwapNumbers_IS {
     public static void main(String[] args) {
         swapNumbers(11,22);
         swapNumbers(3, 42);
-        swapNumbers(5, 14);
+        swapNumbers(7, 12);
 
     }
 
