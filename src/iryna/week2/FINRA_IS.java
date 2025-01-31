@@ -3,17 +3,22 @@ package iryna.week2;
 public class FINRA_IS {
     public static void main(String[] args) {
 
-        for (int i = 1; i<31; i++){
+        int num = 30;
+        finraNumber(num);
+
+    }
+
+    private static void finraNumber(int num) {
+        for (int i = 1; i<=num; i++){
             if (i % 3 == 0 && i % 5 == 0 ){
-                System.out.println("FINRA");
+                System.out.print("FINRA ");
             } else if (i % 3 == 0){
-                System.out.println("FIN");
+                System.out.print("FIN ");
             } else if (i % 5 == 0) {
-                System.out.println("RA");
+                System.out.print("RA ");
             }else {
-                System.out.println(i);
+                System.out.print(i + " ");
             }
         }
-
     }
 }
