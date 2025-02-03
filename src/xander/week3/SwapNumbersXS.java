@@ -9,6 +9,8 @@ public class SwapNumbersXS {
         numberSwapper(14, 56);
         System.out.println("---");
         numberSwapper(75, 90);
+        System.out.println("---");
+        numberSwapper(50, 100);
 
     }
 
