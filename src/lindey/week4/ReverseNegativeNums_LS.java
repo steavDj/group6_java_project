@@ -1,24 +1,44 @@
 package lindey.week4;
 
 public class ReverseNegativeNums_LS {
+    public static int originalInput;
     public static void main(String[] args) {
-        System.out.println("reverseNegativeNums(0) = " + reverseNegativeNums(0));
-        System.out.println("reverseNegativeNums(-18) = " + reverseNegativeNums(-18));
-        System.out.println("reverseNegativeNums(24) = " + reverseNegativeNums(24));
+        System.out.println("reverseNegNums(-321) = " + reverseNegNums(-123));
+        System.out.println("---------------------");
+        System.out.println("reverseNegNums(123) = " + reverseNegNums(123));
+        System.out.println("---------------------");
+        System.out.println("reverseNegNums(-300) = " + reverseNegNums(-300));
+        System.out.println("---------------------");
 
-
+        System.out.println(showLeadingZeros(reverseNegNums(-2500)));
     }
 
-    public static int reverseNegativeNums(int x){
-        //-123
-        String str = new StringBuilder(x+"").reverse().toString(); //321-
 
-        if (x<0){
-            str = str.substring(0,str.length()-1); //321
-            str =  "-" + str; //-321
-            x = Integer.valueOf(str);
 
+    public static int reverseNegNums(int x){ //x= -200
+        if (x >= 0) {
+            System.out.print("Invalid entry; number must be negative. You entered: ");
         }
-            return x;
+
+        originalInput = x;
+
+        if (x < 0) {
+            String str = new StringBuilder(String.valueOf(-x)).reverse().toString(); //002
+            x = -(Integer.valueOf(str)); //-2
+        }
+
+        return x;
     }
+
+
+    public static String showLeadingZeros (int x){
+        String str = new StringBuilder(String.valueOf(-originalInput)).reverse().toString(); //002
+        if (str.charAt(0) == '0'){
+            System.out.println("Integer value of reversed negative num= "+ x);
+            str = "String value showing leading zeros= -" + str;
+        }return str;
+    }
+
+
+
 }
