@@ -5,9 +5,14 @@ public class NegativeToPositive {
 
         System.out.println(negativeToPositive(-5));
         System.out.println(negativeToPositive(-10));
+        System.out.println(negativeToPositive(-20));
+        System.out.println(negativeToPositive(10));
     }
 
     public static int negativeToPositive(int num){
-        return -num;
+        if (num < 0){
+            return -num;
+        }
+        return num;
     }
 }
