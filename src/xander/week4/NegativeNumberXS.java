@@ -5,7 +5,7 @@ public class NegativeNumberXS {
 
         System.out.println(reverseNum(-10));
         System.out.println(reverseNum(-50));
-        System.out.println(reverseNum(-100123123));
+        System.out.println(reverseNum(-100));
 
     }
 
