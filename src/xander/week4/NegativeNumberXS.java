@@ -14,22 +14,49 @@ package xander.week4;
 public class NegativeNumberXS {
     public static void main(String[] args) {
 
-        // Test Cases
+        // Solution 1 Test Cases
+        System.out.println("Results for solution without StringBuilder");
+        System.out.println(reverseNum(-15));
+        System.out.println(reverseNum(-57));
+        System.out.println(reverseNum(-125));
         System.out.println(reverseNum(-10));
-        System.out.println(reverseNum(-50));
-        System.out.println(reverseNum(-100));
+
+        System.out.println("-----");
+
+        // Solution 2 Test Cases
+        System.out.println("Results for solution using StringBuilder");
+        System.out.println(reverseNumStringBuilder(-15));
+        System.out.println(reverseNumStringBuilder(-57));
+        System.out.println(reverseNumStringBuilder(-125));
+        System.out.println(reverseNumStringBuilder(-10));
 
     }
 
-    // Method that returns -num if negative, num if the value is 0 or positive
-    // Github Test
+    // Reversing a negative number without StringBuilder
     public static int reverseNum(int num) {
 
+        String stringNum = "" + num;
+        String stringNumReversed = "";
+
         if (num < 0) {
-            return -num;
+            for (int i = stringNum.length() - 1; i > 0; i--) {
+                stringNumReversed = stringNumReversed + stringNum.charAt(i);
+            }
+            return Integer.parseInt("-" + stringNumReversed);
         }
 
-        return +num;
+        return num;
+    }
+
+    // Reversing a negative number using StringBuilder
+    public static int reverseNumStringBuilder(int num) {
+
+        if (num < 0) {
+            StringBuilder sbNum = new StringBuilder(String.valueOf(-num));
+            String stringNumReversed = sbNum.reverse().toString();
+            return Integer.parseInt("-" + stringNumReversed);
+        }
+        return num;
     }
 
 }
