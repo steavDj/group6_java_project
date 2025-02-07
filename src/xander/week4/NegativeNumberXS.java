@@ -28,7 +28,7 @@ public class NegativeNumberXS {
             return -num;
         }
 
-        return num;
+        return +num;
     }
 
 }
