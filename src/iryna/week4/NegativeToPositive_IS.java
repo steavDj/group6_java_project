@@ -1,6 +1,6 @@
 package iryna.week4;
 
-public class NegativeToPositive {
+public class NegativeToPositive_IS {
     public static void main(String[] args) {
 
         System.out.println(negativeToPositive(-5));
