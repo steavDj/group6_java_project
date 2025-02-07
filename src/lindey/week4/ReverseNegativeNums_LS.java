@@ -1,6 +1,6 @@
 package lindey.week4;
 
-public class ReverseNegativeNums {
+public class ReverseNegativeNums_LS {
     public static void main(String[] args) {
         System.out.println("reverseNegativeNums(0) = " + reverseNegativeNums(0));
         System.out.println("reverseNegativeNums(-18) = " + reverseNegativeNums(-18));
