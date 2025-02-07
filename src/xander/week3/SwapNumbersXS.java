@@ -1,9 +1,20 @@
 package xander.week3;
 
+/**
+ * @author Xander Stone
+ */
+
+/*
+    Numbers -- Swap Numbers
+
+    Swap two variable values without using a third variable
+
+ */
+
 public class SwapNumbersXS {
     public static void main(String[] args) {
 
-        // Additional Test Cases
+        // Test Cases
         numberSwapper(5, 10);
         System.out.println("---");
         numberSwapper(14, 56);
@@ -14,6 +25,7 @@ public class SwapNumbersXS {
 
     }
 
+    // Method that swaps the numbers without using a third variable
     public static void numberSwapper(int num1, int num2) {
 
         System.out.println("Before the swap");
