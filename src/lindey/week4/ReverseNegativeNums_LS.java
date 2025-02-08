@@ -3,7 +3,7 @@ package lindey.week4;
 public class ReverseNegativeNums_LS {
     public static int originalInput;
     public static void main(String[] args) {
-        System.out.println("reverseNegNums(-321) = " + reverseNegNums(-123));
+        System.out.println("reverseNegNums(-123) = " + reverseNegNums(-123));
         System.out.println("---------------------");
         System.out.println("reverseNegNums(123) = " + reverseNegNums(123));
         System.out.println("---------------------");
@@ -24,7 +24,7 @@ public class ReverseNegativeNums_LS {
 
         if (x < 0) {
             String str = new StringBuilder(String.valueOf(-x)).reverse().toString(); //002
-            x = -(Integer.valueOf(str)); //-2
+            x = -(Integer.parseInt(str)); //-2
         }
 
         return x;
