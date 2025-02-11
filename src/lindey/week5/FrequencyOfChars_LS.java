@@ -17,7 +17,7 @@ public class FrequencyOfChars_LS {
         System.out.println("charFreqAsStringInAlphaOrder(frequencyOfChars(str2)) = " + charFreqAsStringInAlphaOrder(frequencyOfChars(str2)));
     }
 
-    public static Map frequencyOfChars(String str) {
+    public static Map<Character, Integer> frequencyOfChars(String str) {
         if (str.isEmpty()) {
             System.err.println("Value entered is null or empty");
         }
