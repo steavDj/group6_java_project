@@ -1,10 +1,10 @@
 package lindey.week1;
 
-public class OddAndEvenNumbersLS {
+public class OddAndEvenNumbers_LS {
     public static void main(String[] args) {
         OddOrEven(5);
         OddOrEven(6);
-        OddOrEven(7);
+        //OddOrEven(7);
     }
 
 

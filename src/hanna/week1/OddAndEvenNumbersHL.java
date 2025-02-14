@@ -1,6 +1,6 @@
-package hanna7.week1;
+package hanna.week1;
 
-public class OddAndEvenNumberHL {
+public class OddAndEvenNumbersHL {
 
     public static void main(String[] args) {
         System.out.println("Hello Guys!");
@@ -10,7 +10,7 @@ public class OddAndEvenNumberHL {
         for (int i = 0; i < num; i++) {
             if (i % 2 == 0) {
                 System.out.print(i + " is even ");
-            }else{
+            } else {
                 System.out.print(i + " is odd ");
             }
         }
