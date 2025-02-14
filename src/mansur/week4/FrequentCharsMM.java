@@ -26,7 +26,7 @@ public class FrequentCharsMM {
 
                 if (str.charAt(i) == ch) { // if char is the same as before, it gets added to count
                     count++;
-                }
+                } 
 
             }
 
