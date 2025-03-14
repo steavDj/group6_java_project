@@ -3,14 +3,36 @@ package annaS.week4;
 public class ReverseNegative {
 
     public static void main(String[] args) {
-        System.out.println("reverseNum(-22) = " + reverseNum(-22));
-        System.out.println("reverseNum(-555) = " + reverseNum(-555));
+        System.out.println("reverseNum = " + reverseNegativeNumbers(-25));
+        System.out.println("reverseNum = " + reverseNegativeNumbers(-123));
+        System.out.println("reverseNum = " + reverseNegativeNumbers(123));
+        System.out.println("reverseNum = " + reverseNegativeNumbers(-10));
     }
 
-    public  static int reverseNum(int num){
-        Math.abs(num);
-        return -num;
+    // Solving with ready Method
+    public  static int reverseNegativeNumbers(int num) {
+        String str = new StringBuilder(num+ "").reverse().toString();// 321-
+
+
+        if (num<0){
+            str = str.substring(0,str.length()-1); // 321
+            str = "-"+ str;
+        }
+
+        return Integer.valueOf(str);
+
     }
 
 }
 // Leetcode
+
+/* reverse from Negative to Positive!
+ public  static int reverseNegativeNums(int num) {
+
+        if (num < 0) {
+            num = -(num);
+        }
+        return num;
+
+    }
+ */
