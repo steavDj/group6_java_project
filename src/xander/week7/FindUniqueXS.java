@@ -21,6 +21,7 @@ public class FindUniqueXS {
         System.out.println(unique("AAABBBCCCDEF"));
         System.out.println(uniqueStringBuilder("AAABBBCCCDEF"));
         System.out.println(uniqueHashMap("AAABBBCCCDEF"));
+        System.out.println(uniqueHashMapSB("AAABBBCCCDEF"));
 
     }
 
@@ -48,13 +49,42 @@ public class FindUniqueXS {
     public static String uniqueHashMap(String str) {
 
         HashMap<Character, Integer> charCount = new HashMap<>();
+        String result = "";
 
         for (char ch : str.toCharArray()) {
-
+            charCount.put(ch, charCount.getOrDefault(ch, 0) + 1);
         }
 
-        return "";
+        for (char ch : str.toCharArray()) {
+            if (charCount.get(ch) == 1) {
+                result += ch;
+            }
+        }
 
+        return result;
+
+    }
+
+    public static String uniqueHashMapSB(String str) {
+
+        HashMap<Character, Integer> charCount = new HashMap<>();
+        StringBuilder result = new StringBuilder();
+
+        for (char ch : str.toCharArray()) {
+            if (charCount.containsKey(ch)) {
+                charCount.put(ch, charCount.get(ch) + 1);
+            } else {
+                charCount.put(ch, 1);
+            }
+        }
+
+        for (char ch : str.toCharArray()) {
+            if (charCount.get(ch) == 1) {
+                result.append(ch);
+            }
+        }
+
+        return result.toString();
     }
 
 }
