@@ -1,7 +1,6 @@
 package xander.practice;
 
-import java.util.Arrays;
-import java.util.TreeSet;
+import java.util.*;
 
 /*
     Given an unsorted array of integers, find the third-largest number in the array. If the array has less than 3 distinct numbers
@@ -23,8 +22,9 @@ public class ThirdLargest {
         int[] arr2 = {10, 10, 20};
         int[] arr3 = {5, 5, 5};
         int[] arr4 = {10, 10, 10, 50, 50,};
+        int[] arr5 = {5, 20, 7, 0, 19, 0};
 
-        System.out.println(thirdLargest(arr));
+        System.out.println(thirdLargest2(arr2));
     }
 
     public static int thirdLargest(int[] arr) {
@@ -53,9 +53,7 @@ public class ThirdLargest {
 
         if (third != null) {
             return third;
-        } else {
-            return first;
-        }
+        } else return Objects.requireNonNullElse(first, -1);
 
     }
 
@@ -71,10 +69,10 @@ public class ThirdLargest {
             }
         }
 
-        if (set.size() < 3) {
-            return set.last();
-        } else {
+        if (set.size() >= 3) {
             return set.first();
+        } else {
+            return set.last();
         }
 
     }
@@ -100,4 +98,5 @@ public class ThirdLargest {
         // If there are less than 3 distinct numbers, return the largest
         return arr[arr.length - 1];
     }
+
 }
