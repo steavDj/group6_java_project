@@ -10,22 +10,22 @@ public class PasswordValidationDS {
         String password3 = "glasrssa1";     // should NOT pass --> 9 chars, contains: 8 lowerCase, 1 digit
 
         System.out.println("password = " + password);
-        System.out.println("isValid(password) = " + isValid(password));
+        System.out.println("isValid(password) = " + isPasswordValid(password));
 
         System.out.println();
 
         System.out.println("password1 = " + password1);
-        System.out.println("isValid(password1) = " + isValid(password1));
+        System.out.println("isValid(password1) = " + isPasswordValid(password1));
 
         System.out.println();
 
         System.out.println("password2 = " + password2);
-        System.out.println("isValid(password2) = " + isValid(password2));
+        System.out.println("isValid(password2) = " + isPasswordValid(password2));
 
         System.out.println();
 
         System.out.println("password3 = " + password3);
-        System.out.println("isValid(password3) = " + isValid(password3));
+        System.out.println("isValid(password3) = " + isPasswordValid(password3));
 
 
     }
@@ -45,7 +45,7 @@ Password should at least contain a digit
 If all requirements above are met, the method returns true, otherwise returns false.
  */
 
-    public static boolean isValid(String password) {
+    public static boolean isPasswordValid(String password) {
 
         boolean
                 upperCase = false,
