@@ -1,4 +1,4 @@
-package dmytro.week6;
+package dmytro.week7;
 
 public class UniqueCharacters_DS {
 
