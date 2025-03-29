@@ -4,10 +4,10 @@ public class PasswordValidationDS {
 
     public static void main(String[] args) {
 
-        String password = "g$sa1%LJd";      // should     pass --> 9 chars, contains: 2 special, 4 lowerCase, 2 upperCase, 1 digit
-        String password1 = "g$sa1% LJd";    // should NOT pass --> 9 chars, contains: 1 space, 2 special, 4 lowerCase, 2 upperCase, 1 digit
-        String password2 = "g$sa1";         // should NOT pass --> 5 chars, contains: 1 special, 3 lowerCase, 1 digit
-        String password3 = "glasrssa1";     // should NOT pass --> 9 chars, contains: 8 lowerCase, 1 digit
+        String password = "g$sa1%LJd";      // should     pass --> 9 chars: 2 special, 4 lowerCase, 2 upperCase, 1 digit
+        String password1 = "g$sa1% LJd";    // should NOT pass --> 9 chars: 1 space, 2 special, 4 lowerCase, 2 upperCase, 1 digit
+        String password2 = "g$sa1";         // should NOT pass --> 5 chars: 1 special, 3 lowerCase, 1 digit
+        String password3 = "glasrssa1";     // should NOT pass --> 9 chars: 8 lowerCase, 1 digit
 
         System.out.println("password = " + password);
         System.out.println("isValid(password) = " + isPasswordValid(password));
