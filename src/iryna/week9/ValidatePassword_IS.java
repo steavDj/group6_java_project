@@ -15,8 +15,9 @@ If all requirements above are met, the method returns true, otherwise returns fa
 public class ValidatePassword_IS {
     public static void main(String[] args) {
         System.out.println(validatePassword("253Sparta!"));
-        System.out.println(validatePassword("Stryi324!*"));
-        System.out.println("fd");
+        System.out.println(validatePassword("Lviv324!*"));
+        System.out.println(validatePassword("fd"));
+        System.out.println(validatePassword("hahah1"));
     }
 
     //1. Scanner
