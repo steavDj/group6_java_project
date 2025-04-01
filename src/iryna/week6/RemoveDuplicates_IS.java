@@ -1,4 +1,4 @@
-package iryna.week06;
+package iryna.week6;
 
 public class RemoveDuplicates_IS {
     public static void main(String[] args) {
@@ -13,6 +13,7 @@ public class RemoveDuplicates_IS {
         for (int i = 0; i < str.length(); i++) {
             char each = str.charAt(i);
             if (!result.contains(String.valueOf(each))){
+                //if (!result.contains("" + each)){ - other way to do it
                 result += each;
             }
         }
