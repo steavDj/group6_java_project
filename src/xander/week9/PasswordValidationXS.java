@@ -59,13 +59,13 @@ public class PasswordValidationXS {
             }
         }
 
-        if (pwUpper && pwLower && pwDigit && pwSpecial) {
-            return true;
-        } else {
-            return false;
-        }
+//        if (pwUpper && pwLower && pwDigit && pwSpecial) {
+//            return true;
+//        } else {
+//            return false;
+//        }
 
-//         return (pwUpper && pwLower && pwDigit && pwSpecial); // Alternative one line return statement
+         return (pwUpper && pwLower && pwDigit && pwSpecial); // Alternative one line return statement
 
     }
 
