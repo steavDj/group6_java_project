@@ -22,6 +22,7 @@ public class ZipZap {
 
         System.out.println(zipZap(input));
         System.out.println(zipZapRegex(input));
+        System.out.println(zipZapTest(input));
 
     }
 
@@ -48,7 +49,43 @@ public class ZipZap {
 
     public static String zipZapRegex(String str) {
 
+        if (str.length() < 3) {
+            return str;
+        }
+
         return str.replaceAll("z.p", "zp");
+
+    }
+
+    public static String zipZapTest(String str) {
+
+        String result = "";
+
+        if (str.length() < 3) {
+            return str;
+        }
+
+        for (int i = 0; i < str.length(); i++) {
+
+            if (i + 2 < str.length()) {
+
+                char each = str.charAt(i);
+                char eachTwo = str.charAt(i + 2);
+
+                if (each == 'z' && eachTwo == 'p') {
+                    result += each;
+                    result += eachTwo;
+                    i += 2;
+                } else {
+                    result += each;
+                }
+            } else {
+                result += str.charAt(i);
+            }
+
+        }
+
+        return result;
 
     }
 
