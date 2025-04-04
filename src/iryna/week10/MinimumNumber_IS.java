@@ -6,7 +6,7 @@ public class MinimumNumber_IS {
         int[] numbers = {12, 2, 11, 23, 18, 87};
         System.out.println(minNumber(numbers));
 
-        int[] numbers2 = {1,1, 22, 41, 3, 56, -9};
+        int[] numbers2 = {1,1, 22, 41, 3, 56, -9,10};
         System.out.println(minNumber(numbers2));
 
     }
