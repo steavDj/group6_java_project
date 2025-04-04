@@ -21,8 +21,8 @@ public class FindMinimum_DS {
     //Write a method that can find the minimum number from an int Array
     public static int findMinimumNumber(int[] nums) {
 
-        // 1. Initialize an int with value of first num of array
-        int min = nums[0];
+        // 1. Initialize an int with value of maximum int value
+        int min = Integer.MAX_VALUE;
 
         // 2. Creating forEach loop to iterate through each index of the array
         for (int num : nums) {
