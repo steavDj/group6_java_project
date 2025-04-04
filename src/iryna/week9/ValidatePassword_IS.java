@@ -31,7 +31,6 @@ public class ValidatePassword_IS {
         boolean specialChar = false;
         boolean digit = false;
 
-
         if (password.length() < 6 || password.contains(" ")) {
             return false;
         }
