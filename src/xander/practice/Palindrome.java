@@ -32,7 +32,7 @@ public class Palindrome {
 
         StringBuilder strRev = new StringBuilder();
 
-        // Include or exlude depending on whether you need case sensitivity and extra characters or not
+        // Include or exclude depending on whether you need case sensitivity and extra characters or not
         str = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
         for (int i = str.length() - 1; i >= 0; i--) {
