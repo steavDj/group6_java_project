@@ -5,11 +5,11 @@ import java.util.Random;
 
 public class ArraySumIsZero {
     public static void main(String[] args) {
+
         System.out.println("(sumIsZero(3)) = " + Arrays.toString(sumIsZero(3)));
         System.out.println("(sumIsZero(4)) = " + Arrays.toString(sumIsZero(4)));
         System.out.println("(sumIsZero(6)) = " + Arrays.toString(sumIsZero(6)));
         System.out.println("(sumIsZero(7)) = " + Arrays.toString(sumIsZero(7)));
-
     }
 
     public static int[] sumIsZero(int num) {
