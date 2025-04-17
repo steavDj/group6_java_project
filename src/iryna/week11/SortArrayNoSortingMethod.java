@@ -4,12 +4,17 @@ import java.util.Arrays;
 
 public class SortArrayNoSortingMethod {
     public static void main(String[] args) {
+
         int[] arr = {10, 9, 8, 7};
+        int[] arr1 = {11, 34, 2, 44,55,7};
+
         sortingArrayBubble(arr);
+        sortingArrayBubble(arr1);
 
         sortingArrayBubbleBoolean(arr);
 
         sortingSelectionSort(arr);
+        sortingSelectionSort(arr1);
     }
 
     public static void sortingArrayBubble(int[] list){
