@@ -13,6 +13,7 @@ public class SortArrayNoSortingMethod {
         sortingArrayBubbleBoolean(arr);
 
         sortingSelectionSort(arr);
+        sortingSelectionSort(arr1);
     }
 
     public static void sortingArrayBubble(int[] list){
